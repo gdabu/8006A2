@@ -1,0 +1,31 @@
+		     INSTRUCTIONS
+_____________________________________________________
+
+----------Editing User-Defined Variables---------
+	Open firewall.sh
+	Enter IP addresses and Interfaces
+	Enter desired ports to allow
+	Save & Exit
+-------------------------------------------------
+
+--------------Starting The Firewall--------------
+	Open terminal
+	navigate to correct directory
+	Enter 'sh firewall.sh'
+		--To check firewall enter 'iptables -v -L'
+	Firewall is now active
+		--To remove firewall enter 'iptables -F' & 'iptables -X'
+
+
+--------------------------------------------------
+
+----------------Running Test Scipt----------------
+	INTERNAL MACHINE
+		ruby internalTestScript.rb
+			wait
+		open log to view data
+	EXTERNAL MACHINE
+		ruby externalTestScript.rb
+			wait
+		open log to view data
+--------------------------------------------------
